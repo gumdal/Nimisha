@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35166074143B788C00DA47A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35166073143B788C00DA47A6 /* UIKit.framework */; };
+		35166076143B788C00DA47A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35166075143B788C00DA47A6 /* Foundation.framework */; };
+		35166078143B788C00DA47A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35166077143B788C00DA47A6 /* CoreGraphics.framework */; };
+		3516607E143B788C00DA47A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3516607C143B788C00DA47A6 /* InfoPlist.strings */; };
+		35166080143B788C00DA47A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3516607F143B788C00DA47A6 /* main.m */; };
+		35166084143B788C00DA47A6 /* NMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35166083143B788C00DA47A6 /* NMAppDelegate.m */; };
+		35166087143B788C00DA47A6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35166085143B788C00DA47A6 /* MainStoryboard.storyboard */; };
+		3516608A143B788C00DA47A6 /* NMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35166089143B788C00DA47A6 /* NMFirstViewController.m */; };
+		3516608C143B788C00DA47A6 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3516608B143B788C00DA47A6 /* first.png */; };
+		3516608E143B788C00DA47A6 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3516608D143B788C00DA47A6 /* first@2x.png */; };
+		35166091143B788C00DA47A6 /* NMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35166090143B788C00DA47A6 /* NMSecondViewController.m */; };
+		35166093143B788C00DA47A6 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 35166092143B788C00DA47A6 /* second.png */; };
+		35166095143B788C00DA47A6 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35166094143B788C00DA47A6 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3516606F143B788C00DA47A6 /* Nimisha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimisha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35166073143B788C00DA47A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35166075143B788C00DA47A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35166077143B788C00DA47A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3516607B143B788C00DA47A6 /* Nimisha-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nimisha-Info.plist"; sourceTree = "<group>"; };
+		3516607D143B788C00DA47A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3516607F143B788C00DA47A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35166081143B788C00DA47A6 /* Nimisha-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nimisha-Prefix.pch"; sourceTree = "<group>"; };
+		35166082143B788C00DA47A6 /* NMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAppDelegate.h; sourceTree = "<group>"; };
+		35166083143B788C00DA47A6 /* NMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAppDelegate.m; sourceTree = "<group>"; };
+		35166086143B788C00DA47A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		35166088143B788C00DA47A6 /* NMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMFirstViewController.h; sourceTree = "<group>"; };
+		35166089143B788C00DA47A6 /* NMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMFirstViewController.m; sourceTree = "<group>"; };
+		3516608B143B788C00DA47A6 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		3516608D143B788C00DA47A6 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		3516608F143B788C00DA47A6 /* NMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSecondViewController.h; sourceTree = "<group>"; };
+		35166090143B788C00DA47A6 /* NMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSecondViewController.m; sourceTree = "<group>"; };
+		35166092143B788C00DA47A6 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		35166094143B788C00DA47A6 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3516606C143B788C00DA47A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35166074143B788C00DA47A6 /* UIKit.framework in Frameworks */,
+				35166076143B788C00DA47A6 /* Foundation.framework in Frameworks */,
+				35166078143B788C00DA47A6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35166064143B788C00DA47A6 = {
+			isa = PBXGroup;
+			children = (
+				35166079143B788C00DA47A6 /* Nimisha */,
+				35166072143B788C00DA47A6 /* Frameworks */,
+				35166070143B788C00DA47A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35166070143B788C00DA47A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3516606F143B788C00DA47A6 /* Nimisha.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35166072143B788C00DA47A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35166073143B788C00DA47A6 /* UIKit.framework */,
+				35166075143B788C00DA47A6 /* Foundation.framework */,
+				35166077143B788C00DA47A6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35166079143B788C00DA47A6 /* Nimisha */ = {
+			isa = PBXGroup;
+			children = (
+				35166082143B788C00DA47A6 /* NMAppDelegate.h */,
+				35166083143B788C00DA47A6 /* NMAppDelegate.m */,
+				35166085143B788C00DA47A6 /* MainStoryboard.storyboard */,
+				35166088143B788C00DA47A6 /* NMFirstViewController.h */,
+				35166089143B788C00DA47A6 /* NMFirstViewController.m */,
+				3516608B143B788C00DA47A6 /* first.png */,
+				3516608D143B788C00DA47A6 /* first@2x.png */,
+				3516608F143B788C00DA47A6 /* NMSecondViewController.h */,
+				35166090143B788C00DA47A6 /* NMSecondViewController.m */,
+				35166092143B788C00DA47A6 /* second.png */,
+				35166094143B788C00DA47A6 /* second@2x.png */,
+				3516607A143B788C00DA47A6 /* Supporting Files */,
+			);
+			path = Nimisha;
+			sourceTree = "<group>";
+		};
+		3516607A143B788C00DA47A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3516607B143B788C00DA47A6 /* Nimisha-Info.plist */,
+				3516607C143B788C00DA47A6 /* InfoPlist.strings */,
+				3516607F143B788C00DA47A6 /* main.m */,
+				35166081143B788C00DA47A6 /* Nimisha-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3516606E143B788C00DA47A6 /* Nimisha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35166098143B788C00DA47A6 /* Build configuration list for PBXNativeTarget "Nimisha" */;
+			buildPhases = (
+				3516606B143B788C00DA47A6 /* Sources */,
+				3516606C143B788C00DA47A6 /* Frameworks */,
+				3516606D143B788C00DA47A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nimisha;
+			productName = Nimisha;
+			productReference = 3516606F143B788C00DA47A6 /* Nimisha.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35166066143B788C00DA47A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 35166069143B788C00DA47A6 /* Build configuration list for PBXProject "Nimisha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35166064143B788C00DA47A6;
+			productRefGroup = 35166070143B788C00DA47A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3516606E143B788C00DA47A6 /* Nimisha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3516606D143B788C00DA47A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3516607E143B788C00DA47A6 /* InfoPlist.strings in Resources */,
+				35166087143B788C00DA47A6 /* MainStoryboard.storyboard in Resources */,
+				3516608C143B788C00DA47A6 /* first.png in Resources */,
+				3516608E143B788C00DA47A6 /* first@2x.png in Resources */,
+				35166093143B788C00DA47A6 /* second.png in Resources */,
+				35166095143B788C00DA47A6 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3516606B143B788C00DA47A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35166080143B788C00DA47A6 /* main.m in Sources */,
+				35166084143B788C00DA47A6 /* NMAppDelegate.m in Sources */,
+				3516608A143B788C00DA47A6 /* NMFirstViewController.m in Sources */,
+				35166091143B788C00DA47A6 /* NMSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3516607C143B788C00DA47A6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3516607D143B788C00DA47A6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35166085143B788C00DA47A6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35166086143B788C00DA47A6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35166096143B788C00DA47A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35166097143B788C00DA47A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35166099143B788C00DA47A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nimisha/Nimisha-Prefix.pch";
+				INFOPLIST_FILE = "Nimisha/Nimisha-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3516609A143B788C00DA47A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nimisha/Nimisha-Prefix.pch";
+				INFOPLIST_FILE = "Nimisha/Nimisha-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35166069143B788C00DA47A6 /* Build configuration list for PBXProject "Nimisha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35166096143B788C00DA47A6 /* Debug */,
+				35166097143B788C00DA47A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35166098143B788C00DA47A6 /* Build configuration list for PBXNativeTarget "Nimisha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35166099143B788C00DA47A6 /* Debug */,
+				3516609A143B788C00DA47A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35166066143B788C00DA47A6 /* Project object */;
+}
