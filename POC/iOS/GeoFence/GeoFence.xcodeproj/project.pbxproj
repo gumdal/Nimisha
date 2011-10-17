@@ -15,6 +15,10 @@
 		3525F8B11448B066006EFA7D /* GFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3525F8B01448B066006EFA7D /* GFAppDelegate.m */; };
 		3525F8B41448B066006EFA7D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3525F8B21448B066006EFA7D /* MainStoryboard.storyboard */; };
 		3525F8B71448B066006EFA7D /* GFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3525F8B61448B066006EFA7D /* GFViewController.m */; };
+		35315425144C91390067F7FF /* RegionMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35315424144C91390067F7FF /* RegionMonitorManager.m */; };
+		35315429144C91A70067F7FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35315428144C91A70067F7FF /* CoreLocation.framework */; };
+		3531542D144C9B3C0067F7FF /* RegionMonitorNecessities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3531542C144C9B3C0067F7FF /* RegionMonitorNecessities.m */; };
+		35315430144CA4960067F7FF /* GeoFenceRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3531542F144CA4960067F7FF /* GeoFenceRegion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,14 @@
 		3525F8B31448B066006EFA7D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3525F8B51448B066006EFA7D /* GFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFViewController.h; sourceTree = "<group>"; };
 		3525F8B61448B066006EFA7D /* GFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFViewController.m; sourceTree = "<group>"; };
+		35315421144C90EA0067F7FF /* RegionMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionMonitorManager.h; sourceTree = "<group>"; };
+		35315424144C91390067F7FF /* RegionMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionMonitorManager.m; sourceTree = "<group>"; };
+		35315428144C91A70067F7FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3531542A144C940B0067F7FF /* RegionMonitorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionMonitorProtocol.h; sourceTree = "<group>"; };
+		3531542B144C9B3C0067F7FF /* RegionMonitorNecessities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionMonitorNecessities.h; sourceTree = "<group>"; };
+		3531542C144C9B3C0067F7FF /* RegionMonitorNecessities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionMonitorNecessities.m; sourceTree = "<group>"; };
+		3531542E144CA4960067F7FF /* GeoFenceRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFenceRegion.h; sourceTree = "<group>"; };
+		3531542F144CA4960067F7FF /* GeoFenceRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFenceRegion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,7 @@
 				3525F8A11448B066006EFA7D /* UIKit.framework in Frameworks */,
 				3525F8A31448B066006EFA7D /* Foundation.framework in Frameworks */,
 				3525F8A51448B066006EFA7D /* CoreGraphics.framework in Frameworks */,
+				35315429144C91A70067F7FF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 		3525F89F1448B066006EFA7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35315428144C91A70067F7FF /* CoreLocation.framework */,
 				3525F8A01448B066006EFA7D /* UIKit.framework */,
 				3525F8A21448B066006EFA7D /* Foundation.framework */,
 				3525F8A41448B066006EFA7D /* CoreGraphics.framework */,
@@ -82,6 +96,7 @@
 				3525F8B21448B066006EFA7D /* MainStoryboard.storyboard */,
 				3525F8B51448B066006EFA7D /* GFViewController.h */,
 				3525F8B61448B066006EFA7D /* GFViewController.m */,
+				3531541D144C8FE50067F7FF /* Geo Fence Manager */,
 				3525F8A71448B066006EFA7D /* Supporting Files */,
 			);
 			path = GeoFence;
@@ -96,6 +111,21 @@
 				3525F8AE1448B066006EFA7D /* GeoFence-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3531541D144C8FE50067F7FF /* Geo Fence Manager */ = {
+			isa = PBXGroup;
+			children = (
+				35315421144C90EA0067F7FF /* RegionMonitorManager.h */,
+				35315424144C91390067F7FF /* RegionMonitorManager.m */,
+				3531542A144C940B0067F7FF /* RegionMonitorProtocol.h */,
+				3531542B144C9B3C0067F7FF /* RegionMonitorNecessities.h */,
+				3531542C144C9B3C0067F7FF /* RegionMonitorNecessities.m */,
+				3531542E144CA4960067F7FF /* GeoFenceRegion.h */,
+				3531542F144CA4960067F7FF /* GeoFenceRegion.m */,
+			);
+			name = "Geo Fence Manager";
+			path = "../../../../Submodules/Geo Fence Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +193,9 @@
 				3525F8AD1448B066006EFA7D /* main.m in Sources */,
 				3525F8B11448B066006EFA7D /* GFAppDelegate.m in Sources */,
 				3525F8B71448B066006EFA7D /* GFViewController.m in Sources */,
+				35315425144C91390067F7FF /* RegionMonitorManager.m in Sources */,
+				3531542D144C9B3C0067F7FF /* RegionMonitorNecessities.m in Sources */,
+				35315430144CA4960067F7FF /* GeoFenceRegion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +305,7 @@
 				3525F8BC1448B066006EFA7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
