@@ -19,6 +19,9 @@
 		35315429144C91A70067F7FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35315428144C91A70067F7FF /* CoreLocation.framework */; };
 		3531542D144C9B3C0067F7FF /* RegionMonitorNecessities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3531542C144C9B3C0067F7FF /* RegionMonitorNecessities.m */; };
 		35315430144CA4960067F7FF /* GeoFenceRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3531542F144CA4960067F7FF /* GeoFenceRegion.m */; };
+		35DFF5E1145DCB5F00800C48 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DFF5DF145DCB5F00800C48 /* MapViewController.m */; };
+		35DFF5E2145DCB5F00800C48 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35DFF5E0145DCB5F00800C48 /* MapViewController.xib */; };
+		35DFF5E4145DCDA000800C48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DFF5E3145DCDA000800C48 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,10 @@
 		3531542C144C9B3C0067F7FF /* RegionMonitorNecessities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionMonitorNecessities.m; sourceTree = "<group>"; };
 		3531542E144CA4960067F7FF /* GeoFenceRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFenceRegion.h; sourceTree = "<group>"; };
 		3531542F144CA4960067F7FF /* GeoFenceRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFenceRegion.m; sourceTree = "<group>"; };
+		35DFF5DE145DCB5F00800C48 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		35DFF5DF145DCB5F00800C48 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		35DFF5E0145DCB5F00800C48 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		35DFF5E3145DCDA000800C48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 				3525F8A31448B066006EFA7D /* Foundation.framework in Frameworks */,
 				3525F8A51448B066006EFA7D /* CoreGraphics.framework in Frameworks */,
 				35315429144C91A70067F7FF /* CoreLocation.framework in Frameworks */,
+				35DFF5E4145DCDA000800C48 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,7 @@
 				3525F8A01448B066006EFA7D /* UIKit.framework */,
 				3525F8A21448B066006EFA7D /* Foundation.framework */,
 				3525F8A41448B066006EFA7D /* CoreGraphics.framework */,
+				35DFF5E3145DCDA000800C48 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,6 +106,7 @@
 				3525F8B51448B066006EFA7D /* GFViewController.h */,
 				3525F8B61448B066006EFA7D /* GFViewController.m */,
 				3531541D144C8FE50067F7FF /* Geo Fence Manager */,
+				35DFF5DC145DCAC500800C48 /* Map Manager */,
 				3525F8A71448B066006EFA7D /* Supporting Files */,
 			);
 			path = GeoFence;
@@ -126,6 +136,17 @@
 			);
 			name = "Geo Fence Manager";
 			path = "../../../../Submodules/Geo Fence Manager";
+			sourceTree = "<group>";
+		};
+		35DFF5DC145DCAC500800C48 /* Map Manager */ = {
+			isa = PBXGroup;
+			children = (
+				35DFF5DE145DCB5F00800C48 /* MapViewController.h */,
+				35DFF5DF145DCB5F00800C48 /* MapViewController.m */,
+				35DFF5E0145DCB5F00800C48 /* MapViewController.xib */,
+			);
+			name = "Map Manager";
+			path = "../../../../Submodules/Map Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +201,7 @@
 			files = (
 				3525F8AB1448B066006EFA7D /* InfoPlist.strings in Resources */,
 				3525F8B41448B066006EFA7D /* MainStoryboard.storyboard in Resources */,
+				35DFF5E2145DCB5F00800C48 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +218,7 @@
 				35315425144C91390067F7FF /* RegionMonitorManager.m in Sources */,
 				3531542D144C9B3C0067F7FF /* RegionMonitorNecessities.m in Sources */,
 				35315430144CA4960067F7FF /* GeoFenceRegion.m in Sources */,
+				35DFF5E1145DCB5F00800C48 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

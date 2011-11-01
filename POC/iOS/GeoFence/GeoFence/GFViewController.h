@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MapViewController;
+
 @interface GFViewController : UIViewController
+{
+    MapViewController *theMapViewController_;
+}
+@property (nonatomic, retain) MapViewController *theMapViewController;
 
 @end

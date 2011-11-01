@@ -7,13 +7,21 @@
 //
 
 #import "GFViewController.h"
+#import "MapViewController.h"
 
 @implementation GFViewController
+@synthesize theMapViewController = theMapViewController_;
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (void)dealloc
+{
+    [self setTheMapViewController:nil];
+    [super dealloc];
 }
 
 #pragma mark - View lifecycle
@@ -39,11 +47,19 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    MapViewController *aMapVC = [[MapViewController alloc] initWithNibName:@"MapViewController"
+                                                                    bundle:nil];
+    [self setTheMapViewController:aMapVC];
+    [aMapVC release];
+    [[self theMapViewController] presentModalViewController:aMapVC
+                                                   animated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
 	[super viewWillDisappear:animated];
+    [[self theMapViewController] dismissModalViewControllerAnimated:YES];
+    [self setTheMapViewController:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
